@@ -50,19 +50,19 @@ def extract_times(text):
 
 # Main function
 def main():
-    index1 = load_sample_text('index1.txt')
+    main = load_sample_text('main.txt')
 
-    if not index1:
+    if not main:
         return  # Stop execution if the file is not found
 
-    print("\nExtracted Emails:", extract_emails(index1))
-    print("\nExtracted URLs:", extract_urls(index1))
-    print("\nExtracted Phone Numbers:", extract_phone_numbers(index1))
-    print("\nExtracted Credit Card Numbers:", extract_credit_cards(index1))
-    print("\nExtracted HTML Tags:", extract_html_tags(index1))
-    print("\nExtracted Hashtags:", extract_hashtags(index1))
-    print("\nExtracted Currency Amounts:", extract_currency_amounts(index1))
-    print("\nExtracted Times:", extract_times(index1))
+    print("\nExtracted Emails:", extract_emails(main))
+    print("\nExtracted URLs:", extract_urls(main))
+    print("\nExtracted Phone Numbers:", extract_phone_numbers(main))
+    print("\nExtracted Credit Card Numbers:", extract_credit_cards(main))
+    print("\nExtracted HTML Tags:", extract_html_tags(main))
+    print("\nExtracted Hashtags:", extract_hashtags(main))
+    print("\nExtracted Currency Amounts:", extract_currency_amounts(main))
+    print("\nExtracted Times:", extract_times(main))
 
 if __name__ == '__main__':
     main()
